@@ -1,0 +1,44 @@
+#!/bin/sh
+# By Mr.15X•Cyber
+
+
+clear
+figlet tutorial
+echo "==============================================="
+echo " Author : By Mr.15X•Cyber"
+echo " Team   : Cyber Jawa Tengah Black Hat"
+echo "==============================================="
+echo
+sleep 1
+echo "1) perkenalan"
+echo "2) link virus"
+echo "3) link Buku termux"
+echo
+read -p "pilih: " contoh
+if [ $contoh = 1 ]
+then
+     read -p "siapa nama anda: " nama
+     echo
+     sleep 1
+     echo "Hay $nama"
+fi
+if [ $contoh = 2 ]
+then
+pkg update && pkg upgrade
+pkg install python
+pkg install lolcat
+pkg install ruby
+pkg install git
+git clone https://github.com/mrvirusspm/viruz
+read -p "enter "ajab
+cd viruz
+read -p "enter " ytka
+sh login.sh
+fi
+if [ $contoh = 3 ]
+then
+echo "ini link buku termux gua pinjam link dari channel panglima jateng"
+xdg-open https://www.mediafire.com/download/3wtlaj8lzjfkqsu
+echo
+fi
+
